@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background image -->
+  <div class="stars-bg"></div>
+
+  <div class="container">
+
+    <h1>🔐 Random Password Generator</h1>
+    <p class="tagline">Forge a password as strong as a supernova.</p>
+
+    <div class="password-box">
+        <!-- PASSWORD DISPLAY AREA -->
+        <!-- Create an <span> element with id="password-display" to show the generated password -->
+          <span id="password-display">Click Generate</span>
+            <!--    Default text inside: Click Generate -->
+                <button id="copy-btn" title="Copy password">📋</button>
+        <!-- Create a <button> element with id="copy-btn" next to it to allow users to copy it -->
+             <!--    Text inside: 📋 (Clipboard Emoji) -->
+
+
+    </div>
+
+    <!-- OPTIONS SECTION -->
+    <div class="controls">
+
+        <!-- Password Length Text + Value -->
+        <!-- The number next to label should update when slider changes -->
+        <label>Password Length: <span id="length-value">12</span></label>
+
+        <!-- Slider input (Use JS to update #length-value and use value to generate password) -->
+        <input 
+            type="range" 
+            id="length-slider" 
+            min="6" 
+            max="24" 
+            value="12"
+        />
+
+        <!-- Character Option Checkboxes -->
+        <!-- Create a div with class="checkboxes" -->
+        <div class="checkboxes">
+          <label><input type="checkbox" id="include-lower" checked> Lowercase</label>
+          <label><input type="checkbox" id="include-upper"> Uppercase</label>
+          <label><input type="checkbox" id="include-numbers"> Numbers</label>
+          <label><input type="checkbox" id="include-symbols"> Symbols</label>
+        </div>
+        <!-- Inside it create 4 <label> each containing an <input type="checkbox"> -->
+        <!-- IDs to use:
+                include-lower
+                include-upper
+                include-numbers
+                include-symbols
+        -->
+        <!-- Check at least the first checkbox by default -->
+
+
+
+
+
+    </div>
+
+    <!-- Button that triggers password generation -->
+    <button id="generate-btn" class="generate-btn">
+      Generate Password
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

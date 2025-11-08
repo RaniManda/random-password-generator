@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #0a0f25;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Background Stars */
+  .stars-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url("./images/background.png") center / cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  
+  /* Container */
+  .container {
+    background: rgba(255,255,255,0.07);
+    padding: 2.5rem 3rem;
+    border-radius: 14px;
+    text-align: center;
+    width: 90%;
+    max-width: 480px;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    margin-bottom: 0.5rem;
+    color: #78d7ff;
+  }
+  .tagline { opacity: 0.8; margin-bottom: 2rem; }
+  
+  /* Password Box */
+  .password-box {
+    background: rgba(255,255,255,0.12);
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  #password-display {
+    word-break: break-all;
+    font-weight: 500;
+  }
+  
+  #copy-btn {
+    background: #76c9ff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Controls */
+  .controls {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  #length-slider {
+    width: 100%;
+    margin-top: .4rem;
+  }
+  
+  .checkboxes label {
+    display: block;
+    margin-top: .5rem;
+    cursor: pointer;
+  }
+  
+  /* Generate Button */
+  .generate-btn {
+    width: 100%;
+    padding: 12px;
+    background: #78d7ff;
+    color: #0a0f25;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .generate-btn:hover {
+    background: #a9e2ff;
+    transform: scale(1.02);
+  }
+  
+  
+  
